@@ -40,6 +40,13 @@
       #escribenos {
 color: #199a63;
 }
+        ·boton {
+          cursor: pointer;
+    transition: 0.3s;
+}
+.boton:hover {
+    opacity: 0.7;
+}
         /* Ajuste para pantallas pequeñas */
 @media (max-width: 768px) {
     header {
@@ -66,7 +73,8 @@ color: #199a63;
      </header>
     <div class="container">
         <H2 id="escribenos">ESCRIBENOS DIRECTAMENTE</H2>
-        <img src="Imagenes pagina/WhatsApp_logo.png" width="400px", height="80px" alt="Whatsapp", onclick="enviarWhatsApp()">
+    <button>
+        <img src="Imagenes pagina/WhatsApp_logo.png" width="400px", height="80px" alt="Whatsapp", class="boton", onclick="enviarWhatsApp()">
         <script>
         function enviarWhatsApp() {
             let numero = "5611505372";
@@ -75,7 +83,7 @@ color: #199a63;
             window.open(url, "_blank");
         }
     </script>
-        
+        </button>
         <h2>Descarga nuestras listas de precios Actuales</h2>
         <ul class="pdf-list">
          <li>
